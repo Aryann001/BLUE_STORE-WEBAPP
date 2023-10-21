@@ -87,9 +87,9 @@ export const CartItem = (props) => {
           Delete
         </Link>
         <div className="indeBox">
-          <button>-</button>
+          <button onClick={decreaseQuantity} >-</button>
           <input readOnly type="number" value={quantity} />
-          <button>+</button>
+          <button onClick={increaseQuantity} >+</button>
         </div>
         <PriceTag price={price * quantity} currency={"INR"} />
       </Flex>
