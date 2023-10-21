@@ -1,0 +1,32 @@
+.passwordBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.passwordBox > input {
+  padding-right: 2.2vmax;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.passwordBox > span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.passwordBox > span > svg {
+  position: absolute;
+  transform: translateX(-2vmax);
+  font-size: 1.2vmax;
+  color: rgba(0, 0, 0, 0.459);
+  height: 3vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .passwordBox > span > svg {
+    font-size: 2.2vmax;
+    transform: translateX(-4vmax);
+  }
+}

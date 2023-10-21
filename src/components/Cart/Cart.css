@@ -1,0 +1,36 @@
+.emptyCart {
+    display: flex;
+    height: 70vh;
+    padding: 10vmax;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .emptyCart > svg {
+    color: #1f97d4;
+    font-size: 5vmax;
+  }
+  
+  .emptyCart > h2 {
+    font-size: 2vmax;
+  }
+  
+  .viewOrders,
+  .emptyCart > a {
+    background-color: rgb(51, 51, 51) !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 1vmax 3vmax !important;
+    font: 400 1vmax "Roboto" !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 0.2vmax !important; 
+  }
+  
+  .viewOrders:hover,
+  .emptyCart > a:hover{
+    background-color: rgb(41, 41, 41) !important;
+  }

@@ -1,0 +1,74 @@
+.landingPageContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+#videoBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content > h1 {
+    font: 500 3vmax Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content > p {
+    font: 100 1.2vmax sans-serif;
+}
+
+.landingPageBtn {
+    border: 1px solid white;
+    margin-top: 2.2vmax;
+    padding: .6vmax 2vmax;
+    font-size: 1vmax;
+    border-radius: 1vmax;
+    transition: all 0.5s;
+}
+
+.landingPageBtn:hover {
+    background-color: rgba(0, 0, 0, 0.704);
+    color: #1f97d4;
+    border: 1px solid #1f97d4;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content > h1 {
+        font: 500 3.5vmax serif;
+    }
+
+    .content > p {
+        margin: 1vmax;
+        text-align: center;
+        font: 100 1.8vmax sans-serif;
+    }
+
+    .landingPageBtn {
+        margin-top: 3.3vmax;
+        padding: 1.4vmax 3vmax;
+        font-size: 1.4vmax;
+        border-radius: 1.8vmax;
+    }
+}

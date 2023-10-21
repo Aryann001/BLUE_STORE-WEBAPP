@@ -1,0 +1,57 @@
+.logo {
+    width: 5vmax;
+}
+
+.css-d9vnmu > .css-0 {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.css-1v5zkfs{
+    width: 100% !important;
+}
+
+.css-13fflh2 {
+    font-size: 1.2vmax !important;
+}
+
+.css-13fflh2:hover {
+    color: #1f97d4 !important;
+}
+
+.css-ilx5iv > a {
+    font-size: 1.3vmax !important;
+    margin: 0 .5vmax !important;
+}
+
+.css-ilx5iv > a:hover {
+    color: #1f97d4 !important;
+    background-color: transparent !important;
+}
+
+.css-d9vnmu > .css-0 > a > svg {
+    font-size: 2.5vmax !important;
+}
+
+.css-ilx5iv > .css-1saqvlr {
+    padding: 1.2vmax !important;
+    border-radius: 4vmax !important;
+    background-color: #1f97d4 !important;
+    border: 1px solid #1f97d4 !important;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .css-ilx5iv > a {
+      font-size: 2vmax !important;
+    }
+
+    .css-n4g5d6{
+        font-size: 10vmax !important;
+    }
+
+    .css-1aylv9m > .css-1811skr > a > p > svg {
+        font-size: 5vmax !important;
+    }
+}

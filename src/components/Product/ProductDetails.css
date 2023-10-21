@@ -1,0 +1,139 @@
+.customerReviews {
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 8vmax;
+}
+
+.customerReviews > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+}
+
+.crSection1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.crSection-1-1 > h1 {
+  font-size: 2vmax;
+  font-weight: 500;
+}
+
+.crSection-1-2 {
+  display: flex;
+  gap: 2vmax;
+}
+
+.crSection-1-2 > div:first-child > h1 {
+  font-size: 3.5vmax;
+  font-weight: 500;
+}
+
+.crSection-1-2 > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.crSection-1-2 > div:last-child > div {
+  margin-left: 0.3vmax;
+}
+
+.crSection-1-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1vmax;
+}
+
+.crSection-1-3 > div {
+  height: 5vmax;
+  width: 15vmax;
+}
+
+.crSection2 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forYou::-webkit-scrollbar,
+.crSection2::-webkit-scrollbar {
+  height: 0.7vmax;
+  width: 0.5vmax;
+}
+
+.forYou::-webkit-scrollbar-track,
+.crSection2::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.forYou::-webkit-scrollbar-thumb,
+.crSection2::-webkit-scrollbar-thumb {
+  border-radius: 2vmax;
+  background-color: #1f97d4;
+}
+
+.crSection2 > div {
+  height: 100%;
+  width: 90%;
+  padding: 2vmax 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: var(--chakra-space-16);
+  grid-column-gap: var(--chakra-space-8);
+}
+
+.customerReviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vmax;
+  width: 100%;
+}
+
+.crcSection1 {
+  display: flex;
+  gap: 1vmax;
+}
+
+.crcSection1 > div:first-child {
+  width: 5vmax;
+}
+
+.crcSection1 > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #0000004d;
+}
+
+.crcSection2,
+.crcSection3 {
+  margin-left: 6vmax;
+  margin-right: 1vmax;
+}
+
+.crcSection2 > p {
+  font-size: medium;
+}
+
+.crcSection3 > p {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.596);
+}
+
+.forYou {
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding-left: 10vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .crSection2 > div {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2vmax;
+  }
+}

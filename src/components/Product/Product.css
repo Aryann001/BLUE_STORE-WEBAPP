@@ -1,0 +1,383 @@
+.ratingDiv {
+  margin: 0.5vmax 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax serif;
+}
+
+.indeBox {
+  display: flex;
+  align-items: center;
+}
+
+.indeBox > button {
+  border: none;
+  width: 3vmax;
+  background-color: #1f98d4e3;
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+
+.indeBox > button:hover {
+  background-color: #1f97d4;
+}
+
+.indeBox > input {
+  border: none;
+  padding: 0.5vmax;
+  width: 2vmax;
+  text-align: center;
+  outline: none;
+  font: 400 0.8vmax serif;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.button > button:last-child {
+  --chakra-space-8: 0.5vmax;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100%;
+  align-items: center;
+}
+
+.productContainer {
+  width: 80%;
+  margin: 3vmax;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productContainer > div:first-child {
+  width: 20%;
+}
+
+.productContainer > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  margin: 2vmax 0;
+}
+
+.search > h2,
+.categories > h2,
+.priceSlider > h2,
+.rating > h2 {
+  margin-bottom: 0.5vmax;
+  font-weight: 500;
+}
+
+.search > form {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #1f97d4;
+  border-radius: 1vmax;
+  padding: 0.5vmax 1vmax;
+}
+
+.search > form > input {
+  border: none;
+  outline: none;
+  width: 85%;
+}
+
+.search > form > button {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search > form > button > svg {
+  color: #12648d;
+}
+
+.categories > ul > li {
+  list-style: none;
+}
+
+.categories > ul > li > div {
+  margin: 0.2vmax;
+}
+
+.categories > ul > li > div > input {
+  color: #1f97d4;
+}
+
+.categories > ul > li > div > label {
+  margin-left: 1vmax;
+  transition: all 0.5s;
+}
+
+.categories > ul > li > div > label:hover {
+  color: #1f97d4;
+}
+
+.priceSlider {
+  background-color: white;
+}
+
+.priceSlider > div {
+  width: 80%;
+  margin-top: 1.5vmax;
+}
+
+.rating {
+  background-color: white;
+}
+
+.rating > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1f97d4;
+  border-radius: 1vmax;
+  padding: 1.5vmax 0;
+}
+
+.productContainer > div:last-child {
+  width: 75%;
+}
+
+.reviewHeading,
+.productContainer > div:last-child > h1 {
+  width: 50%;
+  text-align: center;
+  margin: 1vmax auto;
+  padding-bottom: 1vmax;
+  font-size: 2vmax;
+  font-weight: 600;
+  font-family: monospace;
+  color: #000000ad;
+  border-bottom: 1px solid #0a0a0a4d;
+}
+
+.productCardContainerBorder {
+  border: 2px solid #0000001e;
+  border-radius: 2vmax;
+}
+
+.productCardContainerHeading {
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  margin: 1vmax auto;
+  padding-bottom: 1vmax;
+  font-size: 1.5vmax;
+  font-weight: 400;
+  color: #00000094;
+}
+
+.productContainer > div:last-child > div {
+  min-height: 70vh;
+}
+
+.productContainer > div:last-child > div > div:last-child {
+  width: 100%;
+  text-align: center;
+  margin: 1vmax auto;
+}
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1f97d4;
+  margin: 0.5vmax 0;
+  padding: 0.5vmax 2vmax;
+  border-radius: 2vmax;
+  color: #1f97d4;
+  transition: all 0.5s;
+}
+
+.filterBtn > span {
+  margin-right: 1vmax;
+}
+
+.filterBtn:hover {
+  background-color: #1f97d4;
+  color: white;
+}
+
+.filterDivForMobile {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax;
+  margin: 0.5vmax;
+  border-radius: 1vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-link {
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  font: 500 1vmax monospace;
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+  color: #12648d;
+}
+
+.page-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: #1f97d4;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.2vmax #00000070;
+  border-radius: 1vmax;
+  padding: 1vmax;
+}
+
+.reviewCard {
+  flex: none;
+  box-shadow: 0 0 1.5vmax #1f97d4;
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  border-radius: 1vmax;
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vmax;
+  padding: 3vmax;
+}
+
+.reviewCard > img {
+  width: 5vmax;
+}
+
+.reviewCard > p {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 0.9vmax "Roboto";
+}
+
+.MuiRating-root {
+  color: #1f97d4 !important;
+}
+
+.reviewCard-span {
+  color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8vmax cursive;
+}
+
+.noReviews {
+  font: 400 1.3vmax monospace;
+  padding: 5vmax;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
+
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .productContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productContainer > div:first-child {
+    width: 90%;
+    margin: 0 1vmax;
+  }
+
+  .productContainer > div:last-child {
+    width: 100%;
+  }
+
+  .productCardContainerBorder {
+    border: none;
+  }
+
+  .filterDivForMobile {
+    position: absolute;
+    width: 90%;
+    transform: translateY(5vmax);
+  }
+
+  .indeBox > input {
+    padding: 1.5vmax;
+    width: 3vmax;
+    font-size: 400 1.8vmax monospace;
+  }
+
+  .reviewCard > img {
+    width: 8vmax;
+  }
+
+  .reviewCard > p {
+    font: 600 1.5vmax monospace;
+  }
+
+  .reviewCard-span {
+    font: 300 2vmax cursive;
+  }
+}
