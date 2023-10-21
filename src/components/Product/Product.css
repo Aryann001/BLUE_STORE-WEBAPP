@@ -265,7 +265,7 @@
 .reviewContainer {
   display: flex;
   flex-wrap: wrap;
-  height: 12vmax;
+  height: max-content;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 0.2vmax #00000070;
@@ -367,7 +367,7 @@
   .indeBox > input {
     padding: 1.5vmax;
     width: 6vmax;
-    font: 400 3vmax monospace;
+    font: 400 2.2vmax monospace;
   }
 
   .reviewCard > img {
