@@ -297,7 +297,7 @@ export default function Simple() {
                   className="crSection2"
                   style={seeAll ? { overflow: "auto" } : { overflow: "hidden" }}
                 >
-                  <div>
+                  <div style={seeAll ? { overflow: "auto" } : { overflow: "hidden" }} >
                     {product.reviews && product.reviews.length >= 1 ? (
                       product.reviews.map((review) => (
                         <div key={review._id} className="reviewContainer">
