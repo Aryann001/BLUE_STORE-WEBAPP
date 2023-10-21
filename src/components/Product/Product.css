@@ -265,6 +265,7 @@
 .reviewContainer {
   display: flex;
   flex-wrap: wrap;
+  height: 12vmax;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 0.2vmax #00000070;
