@@ -16,19 +16,20 @@ import "./Login.css";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, loginUser } from "../../actions/userAction";
 import toast from "react-hot-toast";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import loginBg from "../../assets/loginBg.jpg";
 import Loader from "../Layout/Loader/Loader";
 
 export default function SplitScreen() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const location = useLocation();
 
-  const searchParams = new URLSearchParams(location.search);
-  const search = searchParams.get("redirect");
+  const [searchParams] = useSearchParams();
+  const search = searchParams.toString();
+  const params = new URLSearchParams(searchParams);
+  const paramArray = Array.from(params.entries());
 
-  const redirect = searchParams ? `/${search}` : `/profile`;
+  const redirect = search ? `/${paramArray[0][1]}` : `/profile`;
 
   const { loading, isAuthenticated, error } = useSelector(
     (state) => state.user
