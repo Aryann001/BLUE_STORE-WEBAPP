@@ -364,9 +364,9 @@
   }
 
   .indeBox > input {
-    padding: 3.5vmax;
+    padding: 1.5vmax;
     width: 3vmax;
-    font-size: 400 1.8vmax monospace;
+    font-size: 400 3vmax monospace;
   }
 
   .reviewCard > img {
