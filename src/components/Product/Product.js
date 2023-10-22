@@ -78,9 +78,11 @@ const Product = () => {
    if (location.search !== "") {
       setCategory(homeCategory);
       setSelected(homeCategory);
+      dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
+    } else {
+      dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
     }
 
-    dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
   }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory, location]);
 
   return (
