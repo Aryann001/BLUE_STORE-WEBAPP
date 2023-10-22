@@ -13,7 +13,7 @@ export const AdminOrdersUpdateCardInfo = (props) => {
             Name
           </Text>
           <Text fontSize="l" fontWeight="semibold">
-            {user.name}
+            {user && user.name}
           </Text>
         </Flex>
 
