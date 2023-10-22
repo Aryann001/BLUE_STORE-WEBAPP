@@ -75,7 +75,7 @@ const Product = () => {
       dispatch(clearErrors());
     }
 
-    if (homeCategory !== undefined) {
+    if (location.search !== "") {
       setCategory(homeCategory);
       setSelected(homeCategory);
       dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
@@ -83,10 +83,7 @@ const Product = () => {
       dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
     }
 
-    console.log(searchParams)
-    console.log(location.search)
-
-  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory, searchParams, location]);
+  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory, location]);
 
   return (
     <Fragment>
