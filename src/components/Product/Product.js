@@ -83,7 +83,10 @@ const Product = () => {
       dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
     }
 
-  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory]);
+    console.log(searchParams)
+    console.log(location.search)
+
+  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory, searchParams, location]);
 
   return (
     <Fragment>
