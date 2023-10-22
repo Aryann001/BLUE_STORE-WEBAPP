@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
       <div>
         <Rating {...options} /> <span className="productCardSpan">({product.numOfReviews} Reviews)</span>
       </div>
-      {product && product.featured && product.featured === true && (
+      {product.featured && (
         <div className="featuredBadge">
           <div><PiMedalFill /></div>
           <p>Featured</p>
