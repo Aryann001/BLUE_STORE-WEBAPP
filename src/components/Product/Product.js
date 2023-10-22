@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, filteredProduct } from "../../actions/productAction";
 import ProductCard from "../Home/ProductCard";
 import Loader from "../Layout/Loader/Loader";
-import { useLocation } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import {AiFillCaretDown as Down} from "react-icons/ai"
 import {BiSolidUpArrow as Up} from "react-icons/bi"
 
@@ -34,7 +34,6 @@ const categories = [
 
 const Product = () => {
   const dispatch = useDispatch();
-  const location = useLocation();
 
   const [keyword, setKeyword] = useState("");
   const [category, setCategory] = useState("");
@@ -44,8 +43,10 @@ const Product = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const searchParams = new URLSearchParams(location.search);
-  const homeCategory = searchParams.get("category");
+  const [searchParams] = useSearchParams();
+  const search = searchParams.toString();
+  const params = new URLSearchParams(searchParams);
+  const homeCategoryArr = Array.from(params.entries());
 
   const {
     products,
@@ -75,15 +76,15 @@ const Product = () => {
       dispatch(clearErrors());
     }
 
-    if (location.search !== "") {
-      setCategory(homeCategory);
-      setSelected(homeCategory);
+    if (search) {
+      setCategory(homeCategoryArr[0][1]);
+      setSelected(homeCategoryArr[0][1]);
       dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
     } else {
       dispatch(filteredProduct(keyword, price, ratings, currentPage, category));
     }
 
-  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategory, location]);
+  }, [dispatch, error, keyword, price, ratings, currentPage, category, homeCategoryArr, search]);
 
   return (
     <Fragment>
