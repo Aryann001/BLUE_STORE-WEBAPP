@@ -126,7 +126,7 @@ const Product = () => {
                               height: "48vh",
                               borderBottom: "1px solid black"
                             }
-                          : { animationName: "dropUp", animationDuration: "2s" }
+                          : { transition: "all 1.25s ease-out" }
                       }
                       className="expandable"
                     >
