@@ -5,7 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Provider } from "react-redux";
 import store from "./store";
 
-export const server = "https://blue-store-api.onrender.com/api/v1";
+export const server = "https://blue-store-api.vercel.app/api/v1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
