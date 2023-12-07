@@ -196,7 +196,8 @@
   margin: 0.5vmax 0;
   padding: 0.5vmax 2vmax;
   border-radius: 2vmax;
-  color: #1f97d4;
+  color: white;
+  background-color: #1f97d4;
   transition: all 0.5s;
 }
 
