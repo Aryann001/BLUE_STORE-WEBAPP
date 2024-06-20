@@ -26,6 +26,11 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.categoryContainer > div > a:hover {
+  transform: scale(1.2);
 }
 
 .categoryContainer > div > a > img {
